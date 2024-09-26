@@ -5,11 +5,18 @@ import MessageForm from './MessageForm';
 import Messages from './Messages';
 import Vehicles from './Vehicles';
 import axios from 'axios';
-
 import setAuthToken from '../utils/setAuthToken';
 import Images from './Image';
 import ImageContainer from './ImageContainer';
+
+
+
+
+
+
+
 const REACT_APP_SERVER_URL = process.env.REACT_APP_SERVER_URL;
+
 
 
 
@@ -61,6 +68,7 @@ const Profile = (props) => {
 
        </div>
        <div className='vehicle-info'>
+
         <Vehicles user={id}/>
 
 
@@ -89,5 +97,6 @@ const Profile = (props) => {
     );
 
 }
+
 
 export default Profile;
